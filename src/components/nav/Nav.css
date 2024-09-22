@@ -1,0 +1,90 @@
+/* *** NAV *** */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 30px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+header .icons {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.left img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.center input {
+  width: 100%;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 9px 16px;
+  padding-right: 120px;
+}
+
+.center input:focus {
+  outline: none;
+}
+
+.center input::placeholder {
+  opacity: 0.5;
+  color: white;
+}
+
+.center input:first-of-type {
+  border-radius: 40px 0 0 40px;
+}
+
+.center input:last-of-type {
+  border-radius: 0 40px 40px 0;
+}
+
+.center img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.center .searchIcon {
+  font-size: 50px;
+  color: rgb(21, 90, 136);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .center {
+    display: none;
+  }
+}

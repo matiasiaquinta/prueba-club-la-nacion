@@ -1,0 +1,24 @@
+:root {
+  --title-color: #07083e;
+  --subtitle-color: #0b0c5f;
+  --card-content: #0070ff;
+  --border-button: rgb(62, 184, 255);
+  --text-button: #b2d7ff;
+
+  --black-color: #010139;
+  --premium-color: #0019a5;
+  --classic-color: #0371ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}

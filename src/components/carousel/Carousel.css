@@ -1,0 +1,199 @@
+/* *** CAROUSEL + CARD *** */
+
+.carousel-section {
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.carousel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 60px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: var(--title-color);
+}
+
+.carousel-title button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--border-button);
+  color: var(--border-button);
+  font-size: 0.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.carousel-title h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.carousel-title.second h1 {
+  margin-bottom: 0;
+}
+
+.carousel-subtitle {
+  color: var(--title-color);
+  width: 80%;
+  font-size: 0.8em;
+  margin: 0 auto;
+  padding: 0 60px;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.carousel-controls .icon-arrow {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.carousel .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.carousel .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.carousel .card-content {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carousel .card-content a {
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+}
+
+.carousel .card-content h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carousel .card-content.second {
+  display: block;
+}
+
+.carousel .card-content.second a {
+  color: white;
+}
+
+.carousel .card-content.second button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 16px;
+  border-radius: 5px;
+  font-size: 0.6em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.carousel .card-ubication {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.7em;
+}
+
+.carousel .card-ubication span {
+  font-weight: bold;
+  color: #646464;
+}
+
+.carousel .card-discounts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.carousel .card-discounts span {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.carousel .card-discounts .black {
+  color: var(--black-color);
+}
+
+.carousel .card-discounts .premium {
+  color: var(--premium-color);
+}
+
+.carousel .card-discounts .classic {
+  color: var(--classic-color);
+}
+
+.carousel .discounts-division {
+  opacity: 0.1;
+}
+
+.carousel .card.type-first {
+  background-color: #fff;
+}
+
+.carousel .card.type-second {
+  background-color: var(--card-content);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .carousel {
+    width: 90%;
+  }
+
+  .carousel-title h1 {
+    margin-top: 0;
+  }
+
+  .carousel-controls {
+    display: none;
+  }
+}
