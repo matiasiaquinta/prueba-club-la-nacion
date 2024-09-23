@@ -1,7 +1,7 @@
 import express, { Router } from 'express';
 import { getDataWithTag, getDataWithVoucher } from './controllers/carousel.js';
 
-//const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 const router = Router();
@@ -28,6 +28,6 @@ app.use('/', (req, res) => {
   res.send('Servidor iniciado correctamente.');
 });
 
-/* app.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
-}); */
+});
