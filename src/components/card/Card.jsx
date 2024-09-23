@@ -3,7 +3,6 @@
   Type = Second -> Segundo carousel
 */
 
-import Image from 'next/image';
 import { RiMapPin2Line } from 'react-icons/ri';
 
 const Card = ({ account, type }) => {
@@ -16,7 +15,7 @@ const Card = ({ account, type }) => {
       key={account.id}
     >
       <a href={account.accountUrl}>
-        <Image src={account.image} alt={`this is a ${account.name} image`} />
+        <img src={account.image} alt={`this is a ${account.name} image`} />
       </a>
       <div className={cardContentClass}>
         <h1>
