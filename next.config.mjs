@@ -2,9 +2,9 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true, // Desactiva la optimización de imágenes
+    unoptimized: true,
   },
-  distDir: 'dist', // Cambia el directorio de salida a 'dist'
+  distDir: 'dist',
 };
 
 export default nextConfig;

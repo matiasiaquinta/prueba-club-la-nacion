@@ -1,8 +1,3 @@
-/*
-  Type = First -> Primer carousel
-  Type = Second -> Segundo carousel
-*/
-
 import { RiMapPin2Line } from 'react-icons/ri';
 
 const Card = ({ account, type }) => {
