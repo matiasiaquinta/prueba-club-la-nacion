@@ -31,3 +31,6 @@ app.use('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
+// Esto es para que funcione en deploy con vercel
+export default (req, res) => app(req, res);
