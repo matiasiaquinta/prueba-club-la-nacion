@@ -1,4 +1,5 @@
 export const getApiData = async (type) => {
+  console.log('API_URL:', process.env.API_URL);
   const url =
     type === 'first'
       ? `${process.env.API_URL}/carousel/tag`
