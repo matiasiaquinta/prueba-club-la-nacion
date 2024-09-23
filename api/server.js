@@ -8,7 +8,7 @@ const router = Router();
 
 // Evito error de CORS de manera local
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3001');
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST');
   res.header(
     'Access-Control-Allow-Headers',
@@ -24,6 +24,10 @@ router.get('/carousel/voucher', getDataWithVoucher);
 app.use(express.json());
 app.use(router);
 
+app.use('/', (req, res) => {
+  res.send('Servidor iniciado correctamente.');
+});
+
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
