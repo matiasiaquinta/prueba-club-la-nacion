@@ -175,6 +175,10 @@
   color: white;
 }
 
+.carousel .card.type-second a button {
+  font-size: 0.9em;
+}
+
 @media screen and (max-width: 600px) {
   .carousel-title {
     flex-direction: column;

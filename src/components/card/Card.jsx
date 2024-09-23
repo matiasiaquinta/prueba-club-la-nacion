@@ -49,7 +49,9 @@ const Card = ({ account, type }) => {
             </div>
           </>
         ) : (
-          <button>Quiero mi código</button>
+          <a href={account.accountUrl}>
+            <button>Quiero mi código</button>
+          </a>
         )}
       </div>
     </div>
